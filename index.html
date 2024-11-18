@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Página BTT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Aventura em Cada Pedalada</h1>
+    <p>Rastreie suas aventuras no BTT e compartilhe suas conquistas!</p>
+  </header>
+
+  <!-- Últimos Percursos Section -->
+  <section class="percursos">
+    <h2>Últimos Percursos</h2>
+    <div class="percursos-lista">
+      <div class="percurso">
+        <h3>Volta ao Sameiro (17/11/2024)</h3>
+        <p>Distância: 30km | Duração: 3h</p>
+      </div>
+    </div>
+  </section>
+<!-- Seção para exibir o percurso Strava -->
+<section class="container">
+  <!-- Seção do Strava -->
+  <section class="percurso-strava">
+    <div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="12921254180" data-style="standard"></div>
+    <script src="https://strava-embeds.com/embed.js"></script>
+  </section>
+
+  <!-- Galeria de Fotos -->
+  <section class="galeria">
+    <h2>Galeria de Fotos: Volta ao Sameiro (17/11/2024)</h2>
+    <div class="fotos" id="galeria"></div>
+  </section>
+</section>
+
+  <!-- Modal para exibir imagem maior -->
+  <div id="imagemModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg" alt="Imagem Ampliada">
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

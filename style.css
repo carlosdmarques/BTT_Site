@@ -1,0 +1,165 @@
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  background-size: cover;
+  background-position: center;
+  height: 400px;  /* Ajuste a altura conforme necessário */
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+/* Seção de Percursos */
+.percursos {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.percursos h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.percursos-lista {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.percurso h3 {
+  font-size: 1.8em;
+  color: #4CAF50;
+}
+
+.percurso p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Galeria de Fotos */
+.galeria {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.galeria h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.fotos-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.galeria-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.galeria-img:hover {
+  transform: scale(1.1);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 900px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #ddd;
+}
+/* Container para as duas seções */
+/* Container para as duas seções */
+.container {
+  display: flex; /* Alinha as seções lado a lado */
+  justify-content: center; /* Centraliza as seções horizontalmente */
+  align-items: center; /* Alinha as seções verticalmente no centro */
+  gap: 20px; /* Espaçamento entre as seções */
+  padding: 20px;
+  min-height: 100vh; /* Garante que a altura do container ocupe a altura total da tela */
+}
+
+/* Estilos para a seção do Strava */
+.percurso-strava {
+  flex: 1; /* Faz a seção ocupar o espaço restante */
+  max-width: 45%; /* Limita o tamanho máximo da seção */
+  background-color: #f4f4f4; /* Adiciona fundo para visualização */
+  padding: 10px;
+}
+
+/* Estilos para a galeria de fotos */
+.galeria {
+  flex: 1; /* Faz a seção ocupar o espaço restante */
+  max-width: 45%; /* Limita o tamanho máximo da seção */
+  background-color: #f4f4f4; /* Adiciona fundo para visualização */
+  padding: 10px;
+}
+
+/* Ajustes para telas menores */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Empilha as seções em telas pequenas */
+    align-items: center; /* Alinha as seções ao centro */
+  }
+
+  .percurso-strava, .galeria {
+    max-width: 100%; /* Faz as seções ocuparem toda a largura disponível */
+  }
+}
+
